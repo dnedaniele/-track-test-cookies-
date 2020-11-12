@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Cookies SandBox</title>
     <!-- Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!--  <script
@@ -43,27 +43,44 @@
   <link rel="stylesheet" href="./style.css" />
   <body>
     <div id="container">
-      <h1>A demo of Analytics and Cookies</h1>
+      <h1>A Demo of Tracking Cookies and User Agent</h1>
       <br />
-      <button onclick="sendCookie()">Send A Cookie</button>
-      <br />
-      <br />
-      <div>
+      <!-- SEND COOKIES -->
+
+      <div class="regular-div">
+        <button onclick="sendCookie()">Send A Cookie</button>
+        <br />
+        <br />
         Cookies Info
         <div class="cookiesinfo">
           <br />
           <br /><span class="show-cookies"></span>
         </div>
       </div>
-      <hr>
-      <br>
-      <button onclick="deleteCookie()">Delete the Cookie</button>
-      <br>
-      <div>
-        Refresh your browser and the cookie will be delete
-        <div class="cookiesinfo">
-          
-          <span class="show-cookies"></span>
+      <hr />
+
+      <!-- DELETE COOKIES -->
+      <div class="regular-div">
+        <button onclick="deleteCookie()">Delete the Cookie</button>
+        <br />
+        <br />
+        <div>Refresh your browser and the cookie will be delete</div>
+      </div>
+
+      <br />
+      <hr />
+      <!-- SHOW USER AGENT -->
+      <div class="regular-div">
+        <button onclick="showUserAgent()">Show User Agent</button>
+        <br />
+        <br />
+        <div>
+          This is your User Agent:
+          <div class="cookiesinfo">
+            <br />
+
+            <span class="show-userAgent"></span>
+          </div>
         </div>
       </div>
     </div>
