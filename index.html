@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID"
+    ></script>
+    <script>
+      // https://developers.google.com/analytics/devguides/collection/ga4
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-PM5Z94Y99P");
+    </script>
+    <!-- End Google Analytics -->
+    <script>
+      document.cookie = "first_cookie=test";
+
+      console.log(document.cookie);
+    </script>
+    <script>
+      function sendEvent() {
+        console.log("Sending Event");
+
+        //Google Analytics Tag
+        gtag("event", "Event_Received", {
+          event_category: "purchase",
+          event_label: "ccc",
+          product_name: productName
+        });
+        console.log("Event Sent");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>A demo of Analytics and Cookies</h1>
+    <button onclick="sendEvent()">Send An Event to Google Analytics</button>
+  </body>
+</html>
