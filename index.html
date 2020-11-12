@@ -6,7 +6,7 @@
     <title>Document</title>
     <!-- Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-   <!--  <script
+    <!--  <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=MEASUREMENT_ID"
     ></script> -->
@@ -40,9 +40,34 @@
       }
     </script> -->
   </head>
+  <link rel="stylesheet" href="./style.css" />
   <body>
-    <h1>A demo of Analytics and Cookies</h1>
-    <button onclick="sendCookie()">Send A Cookie </button>
+    <div id="container">
+      <h1>A demo of Analytics and Cookies</h1>
+      <br />
+      <button onclick="sendCookie()">Send A Cookie</button>
+      <br />
+      <br />
+      <div>
+        Cookies Info
+        <div class="cookiesinfo">
+          <br />
+          <br /><span class="show-cookies"></span>
+        </div>
+      </div>
+      <hr>
+      <br>
+      <button onclick="deleteCookie()">Delete the Cookie</button>
+      <br>
+      <div>
+        Refresh your browser and the cookie will be delete
+        <div class="cookiesinfo">
+          
+          <span class="show-cookies"></span>
+        </div>
+      </div>
+    </div>
+
     <script src="./index.js" type="text/javascript"></script>
   </body>
 </html>
