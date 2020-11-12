@@ -31,6 +31,7 @@ function sendCookie() {
 function deleteCookie() {
   document.cookie =
     "user_id = deleteMe; expires=Thu, 01 Jan 1970 00:00:00 GMT;";
+    document.querySelector(".deletionConfirmation").innerHTML = "You deleted all your cookies"
 }
 
 // SHOW USER AGENT
