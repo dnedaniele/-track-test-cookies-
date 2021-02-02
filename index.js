@@ -1,3 +1,5 @@
+ 
+// Nice Explanation video https://www.youtube.com/watch?v=sovAIX4doOE
 // GENERATE COOKIES
 function generateId() {
   return parseInt(Math.random() * 1000000); // 123123123123123
